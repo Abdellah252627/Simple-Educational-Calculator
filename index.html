@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 تمارين الدوال - اليوم 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- العنوان الرئيسي -->
+        <header>
+            <h1>🎯 تمارين الدوال الحسابية</h1>
+            <p>اليوم 3 - Functions Practice</p>
+        </header>
+
+        <!-- قسم العمليات الحسابية الأساسية -->
+        <div class="section">
+            <h2>➕ العمليات الحسابية الأساسية</h2>
+            
+            <div class="calculator-grid">
+                <!-- الجمع -->
+                <div class="calc-item">
+                    <h3>➕ الجمع</h3>
+                    <input type="number" id="add1" placeholder="الرقم الأول" value="5">
+                    <input type="number" id="add2" placeholder="الرقم الثاني" value="3">
+                    <button onclick="testAdd()">احسب</button>
+                    <div id="addResult" class="result"></div>
+                </div>
+
+                <!-- الطرح -->
+                <div class="calc-item">
+                    <h3>➖ الطرح</h3>
+                    <input type="number" id="sub1" placeholder="الرقم الأول" value="10">
+                    <input type="number" id="sub2" placeholder="الرقم الثاني" value="4">
+                    <button onclick="testSubtract()">احسب</button>
+                    <div id="subResult" class="result"></div>
+                </div>
+
+                <!-- الضرب -->
+                <div class="calc-item">
+                    <h3>✖️ الضرب</h3>
+                    <input type="number" id="mul1" placeholder="الرقم الأول" value="6">
+                    <input type="number" id="mul2" placeholder="الرقم الثاني" value="7">
+                    <button onclick="testMultiply()">احسب</button>
+                    <div id="mulResult" class="result"></div>
+                </div>
+
+                <!-- القسمة -->
+                <div class="calc-item">
+                    <h3>➗ القسمة</h3>
+                    <input type="number" id="div1" placeholder="الرقم الأول" value="20">
+                    <input type="number" id="div2" placeholder="الرقم الثاني" value="4">
+                    <button onclick="testDivide()">احسب</button>
+                    <div id="divResult" class="result"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم المعدل -->
+        <div class="section">
+            <h2>📊 حساب المعدل</h2>
+            <div class="average-calculator">
+                <input type="number" id="avg1" placeholder="الدرجة الأولى" value="80">
+                <input type="number" id="avg2" placeholder="الدرجة الثانية" value="90">
+                <input type="number" id="avg3" placeholder="الدرجة الثالثة (اختياري)">
+                <button onclick="testAverage()">احسب المعدل</button>
+                <div id="avgResult" class="result"></div>
+            </div>
+        </div>
+
+        <!-- قسم التحديات -->
+        <div class="section">
+            <h2>🎁 التحديات الإضافية</h2>
+            
+            <div class="challenges-grid">
+                <!-- التحقق من رقم زوجي -->
+                <div class="challenge-item">
+                    <h3>🔢 رقم زوجي أم فردي؟</h3>
+                    <input type="number" id="evenNum" placeholder="أدخل رقم" value="8">
+                    <button onclick="testIsEven()">تحقق</button>
+                    <div id="evenResult" class="result"></div>
+                </div>
+
+                <!-- التحقق من العمر -->
+                <div class="challenge-item">
+                    <h3>👤 تصنيف العمر</h3>
+                    <input type="number" id="ageNum" placeholder="أدخل العمر" value="25">
+                    <button onclick="testCheckAge()">تحقق</button>
+                    <div id="ageResult" class="result"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الاختبارات الآلية -->
+        <div class="section">
+            <h2>🧪 اختبارات تلقائية (Console)</h2>
+            <button onclick="runAllTests()" class="btn-test">▶️ تشغيل جميع الاختبارات</button>
+            <div id="consoleOutput"></div>
+        </div>
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
